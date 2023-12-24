@@ -1,0 +1,11 @@
+TERMWORK 5:  Using WIRESHARK analyse three-way handshaking connection establishment, data transfer and connection termination in client server communication using TCP.
+
+Program Execution Steps: 
+Capturing TCP packets with browser: 
+1. Open Wireshark and double-click on any-interface to start the packet capture process. 
+2. Open the browser and enter any website's fully qualified domain name in the browser address bar and hit enter. 
+3. After the site is fully loaded, stop the capturing process 
+4. Type the following in, apply a filter column and hit-enter: 
+tcp.flags.fin==1 and tcp.flags.ack==1
+5. Select any one of these listed packets, right-click and hover on conversation filter and select TCP
+6. Go to statistics: Generate I/O Graph, Flow Graph and study and analyze both the graphs 

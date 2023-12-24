@@ -1,0 +1,24 @@
+TERMWORK 8:  Simulate a simple 5G Network application using NS3. 
+ 
+Step 1 : Open UBUNTU and locate and open ns-allinone-3.28 folder on Desktop. 
+Step 2 : Go to ns-3.28 folder and open examples->tutorial->second.cc 
+Step 3 : Copy second.cc and paste it in ns-3.28->scratch folder. 
+Remember that scratch folder should contain only one .cc example file and it must contain scratch executable file named scratchsimulator.cc and other files can be deleted.
+Step 4 :  In third.cc , include the following code. (Before – “Simulator::Run ();”) 
+ 	 	#include “ns3/netanim-module.h” 
+  		AnimationInterface anim("third, xml");     
+AsciiTraceHelper ascii; 
+   	 	pointToPoint.EnableAsciiAll(ascii.CreateFileStream("third.tr"));    	 			pointToPoint.EnablePcapAll("third"); 
+Step 5 : Right click->Open in terminal and change working directory to Desktop by cd Desktop and type following commands to go to location where scratch executable file is located i.e. scratch folder. 
+Step 6 : cd ns-allinone-3.28     ->    cd ns-3.28
+Step 7 :		 ./waf build
+Step 8 : Run the third.cc by entering following command. 
+ 	 	./waf --run scratch/third
+Step 9 : Once build is successful, 
+cd ../ (return to ns-allinone-3.28 folder)
+ls
+cd netanim-3.108 ( enter into netanim-3.108)
+Step 10 : Now to see the animation, 
+./NetAnim  (we have to open NetAnim software) 
+Step 11 : In NetAnim, open third , xml by clicking on open XML trace file icon. 
+Step 12 : Click on run option/icon to see the animation. To see the packet transfer, open Packets Tab. 
