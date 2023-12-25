@@ -179,11 +179,11 @@ main (int argc, char *argv[])
       phy.EnablePcap ("third", apDevices.Get (0));
       csma.EnablePcap ("third", csmaDevices.Get (0), true);
     }
- AnimationInterface anim("third,  xml");
- AsciiTraceHelper ascii;
- pointToPoint.EnableAsciiAll(ascii.CreateFileStream("third.tr"));
- pointToPoint.EnablePcapAll("third");
-
+  
+         AnimationInterface anim("third,  xml");
+         AsciiTraceHelper ascii;
+         pointToPoint.EnableAsciiAll(ascii.CreateFileStream("third.tr"));
+         pointToPoint.EnablePcapAll("third");
 
   Simulator::Run ();
   Simulator::Destroy ();
