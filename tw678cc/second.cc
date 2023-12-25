@@ -109,10 +109,11 @@ main (int argc, char *argv[])
 
   pointToPoint.EnablePcapAll ("second");
   csma.EnablePcap ("second", csmaDevices.Get (1), true);
-   AnimationInterface anim("second,  xml");
- AsciiTraceHelper ascii;
- pointToPoint.EnableAsciiAll(ascii.CreateFileStream("second.tr"));
- pointToPoint.EnablePcapAll("second");
+  
+        AnimationInterface anim("second,  xml");
+        AsciiTraceHelper ascii;
+        pointToPoint.EnableAsciiAll(ascii.CreateFileStream("second.tr"));
+        pointToPoint.EnablePcapAll("second");
 
   Simulator::Run ();
   Simulator::Destroy ();
