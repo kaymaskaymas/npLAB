@@ -1,0 +1,14 @@
+NP Termwork 6 : Simulate a Full duplex connection in an wired network using NS3.
+https://youtu.be/PYtgDceDlmw
+
+NP Termwork 7 : Simulate a simple Wireless UDP application using NS3.
+https://youtu.be/TIG5LH1sigU
+
+NP Termwork 8 : Simulate a simple 5G Network application using NS3
+https://youtu.be/DNQeRWEfq-A
+
+NP Termwork 9 :
+https://youtu.be/l_-q5xy8aVU
+
+NP Termwork 10 :
+https://youtu.be/Z2NOnzU18MU
